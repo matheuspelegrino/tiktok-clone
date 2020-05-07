@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
-import { Video } from 'expo-av';
 import { LinearGradient } from 'expo-linear-gradient';
+
+import Feed from './Feed';
 
 import { Container, Header, Text, Tab, Separator } from './styles';
 
@@ -10,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <LinearGradient
-        colors={['rgba(0,0,0,0.5)', 'transparent']}
+        colors={['rgba(0,0,0,.7)', 'transparent']}
         style={{
           position: 'absolute',
           left: 0,
@@ -28,23 +29,7 @@ const Home: React.FC = () => {
           <Text active={tab === 2}>Para você</Text>
         </Tab>
       </Header>
-      <Video
-        source={{
-          uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
-        }}
-        rate={1.0}
-        volume={1.0}
-        isMuted={false}
-        resizeMode="cover"
-        shouldPlay
-        isLooping
-        style={{
-          width: '100%',
-          height: '100%',
-          position: 'absolute',
-          zIndex: -5,
-        }}
-      />
+      <Feed uri="http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4" />
     </Container>
   );
 };
