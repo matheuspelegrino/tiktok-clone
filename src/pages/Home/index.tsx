@@ -30,6 +30,16 @@ const Home: React.FC = () => {
         </Tab>
       </Header>
       <Feed uri="http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4" />
+      <LinearGradient
+        colors={['transparent', 'rgba(0,0,0,.7)']}
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          bottom: 0,
+          height: 250,
+        }}
+      />
     </Container>
   );
 };
