@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="tiktokclone" title="tiktokclone" src=".github/tiktok.png" width="150px" />
+<img alt="tiktokclone" title="tiktokclone" src=".github/tiktok.png" width="100px" />
     <br>
     TikTok Clone
 </h1>
@@ -19,7 +19,7 @@ Clone of the TikTok app layout. Under development.
 </p>
 
 <p align="center">
- // preview
+ <img alt="tiktokclonepreview" title="tiktokclonepreview" src=".github/preview.gif"  />
 </p>
 
 ## Technologies
