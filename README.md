@@ -17,9 +17,20 @@ Clone of the TikTok app layout. Under development.
   <a href="#how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
 </p>
+<br>
+<p align="center">
+ <img alt="tiktokclonepreview" title="tiktokclonepreview" src=".github/preview-01.png" /><br>
+</p>
+<br>
+<p align="center">
+  Under development screens
+</p>
 
 <p align="center">
- <img alt="tiktokclonepreview" title="tiktokclonepreview" src=".github/preview.gif"  />
+ <br>
+  <img alt="discover" title="discover" src=".github/preview-04.png" width="150px"   />
+  <img alt="inbox" title="inbox" src=".github/preview-02.png" width="150px"   />
+ <img alt="me" title="me" src=".github/preview-03.png"  width="150px"  />
 </p>
 
 ## Technologies
@@ -34,6 +45,8 @@ This project was developed with the following technologies:
 - [expo-camera](https://docs.expo.io/versions/latest/sdk/camera/)
 - [@expo/vector-icons](https://expo.github.io/vector-icons/)
 - [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/)
+- [react-native-status-bar-height](https://github.com/ovr/react-native-status-bar-height)
+- [lottie-react-native](https://docs.expo.io/versions/latest/sdk/lottie/)
 - [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
 ## How To Use
