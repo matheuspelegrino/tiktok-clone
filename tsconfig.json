@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true
+  },
+  "include": ["**/src/**/*.ts", "**/src/**/*.tsx", "App.tsx"],
+  "exclude": ["node_modules", "babel.config.js", "prettier.config.js"],
+  "files": ["src/@types/index.d.ts"]
+}
