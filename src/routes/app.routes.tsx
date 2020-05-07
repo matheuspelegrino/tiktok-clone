@@ -7,6 +7,7 @@ import {
   FontAwesome,
 } from '@expo/vector-icons';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeButtom from '../components/HomeButton';
 import Discover from '../pages/Discover';
@@ -16,6 +17,7 @@ import Me from '../pages/Me';
 import Record from '../pages/Record';
 
 const Tab = createMaterialBottomTabNavigator();
+const Stack = createStackNavigator();
 
 const AppRoutes: React.FC = () => {
   const [home, setHome] = useState(true);
@@ -47,7 +49,8 @@ const AppRoutes: React.FC = () => {
         name="Home"
         component={Home}
         listeners={{
-          tabPress: () => setHome(true),
+          focus: () => setHome(true),
+          blur: () => setHome(false),
         }}
         options={{
           tabBarLabel: 'Início',
@@ -59,9 +62,6 @@ const AppRoutes: React.FC = () => {
       <Tab.Screen
         name="Discover"
         component={Discover}
-        listeners={{
-          tabPress: () => setHome(false),
-        }}
         options={{
           tabBarLabel: 'Descobrir',
           tabBarIcon: ({ color }) => (
@@ -70,11 +70,17 @@ const AppRoutes: React.FC = () => {
         }}
       />
       <Tab.Screen
-        name="Record"
+        name="Live"
         component={Record}
-        listeners={{
-          tabPress: () => setHome(false),
-        }}
+        listeners={({ navigation }) => ({
+          tabPress: e => {
+            // Prevent default action
+            e.preventDefault();
+
+            // Do something with the `navigation` object
+            navigation.navigate('Record');
+          },
+        })}
         options={{
           tabBarLabel: '',
           tabBarIcon: () => <HomeButtom home={home} />,
@@ -83,9 +89,6 @@ const AppRoutes: React.FC = () => {
       <Tab.Screen
         name="Inbox"
         component={Inbox}
-        listeners={{
-          tabPress: () => setHome(false),
-        }}
         options={{
           tabBarLabel: 'Caixa de entrada',
           tabBarIcon: ({ color }) => (
@@ -100,9 +103,6 @@ const AppRoutes: React.FC = () => {
       <Tab.Screen
         name="Me"
         component={Me}
-        listeners={{
-          tabPress: () => setHome(false),
-        }}
         options={{
           tabBarLabel: 'Eu',
           tabBarIcon: ({ color }) => (
@@ -114,4 +114,21 @@ const AppRoutes: React.FC = () => {
   );
 };
 
-export default AppRoutes;
+const RootStackScreen: React.FC = () => {
+  return (
+    <Stack.Navigator mode="modal">
+      <Stack.Screen
+        name="Main"
+        component={AppRoutes}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        options={{ headerShown: false }}
+        name="Record"
+        component={Record}
+      />
+    </Stack.Navigator>
+  );
+};
+
+export default RootStackScreen;
