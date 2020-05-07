@@ -1,1 +1,71 @@
-# TikTok Clone
+<h1 align="center">
+<img alt="tiktokclone" title="tiktokclone" src=".github/tiktok.png" width="150px" />
+    <br><br>
+    TikTok Clone
+</h1>
+
+<h4 align="center">
+Clone of the TikTok layout. Under development.
+</h4>
+
+<p align="center">
+  // shilds
+</p>
+
+<p align="center">
+  <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#license">License</a>
+</p>
+
+<p align="center">
+ // preview
+</p>
+
+## Technologies
+
+This project was developed with the following technologies:
+
+- [Expo](https://expo.io/)
+- [React-Native](https://facebook.github.io/react-native/)
+- [React Navigation](https://reactnavigation.org/)
+- [styled-components](https://www.styled-components.com/)
+- [expo-av](https://docs.expo.io/versions/latest/sdk/av/)
+- [expo-camera](https://docs.expo.io/versions/latest/sdk/camera/)
+- [@expo/vector-icons](https://expo.github.io/vector-icons/)
+- [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/)
+- [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
+
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16][nodejs] or higher + [Yarn v1.13][yarn] or higher installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/matheuscastroweb/tiktok-clone
+tiktok-clone
+
+# Go into the repository
+$ cd tiktok-clone
+
+# Install dependencies
+$ yarn install
+
+# Run the app (iOS)
+$ yarn ios
+
+# Run the app (Android)
+$ yarn android
+```
+
+## License
+
+This project is under the MIT license. See the [LICENSE](https://github.com/matheuscastroweb/tiktok-clone/blob/master/LICENSE) for more information.
+
+---
+
+[nodejs]: https://nodejs.org/
+[yarn]: https://yarnpkg.com/
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
