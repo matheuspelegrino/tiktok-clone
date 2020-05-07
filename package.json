@@ -16,6 +16,7 @@
     "@react-navigation/stack": "^5.2.19",
     "expo": "^37.0.0",
     "expo-av": "~8.1.0",
+    "expo-camera": "~8.2.0",
     "expo-linear-gradient": "~8.1.0",
     "lottie-react-native": "~2.6.1",
     "react": "16.9.0",

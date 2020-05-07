@@ -15,7 +15,7 @@ const Discover: React.FC = () => {
               paddingRight: 10,
             }}
             name="search1"
-            size={20}
+            size={18}
             color="#838383"
           />
           <Input

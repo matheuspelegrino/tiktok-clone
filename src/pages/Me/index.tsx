@@ -17,7 +17,7 @@ const Me: React.FC = () => {
         <Title>Matheus Castro</Title>
         <MaterialIcons name="arrow-drop-down" size={24} color="black" />
         <FontAwesome
-          style={{ position: 'absolute', right: 13, top: 13 }}
+          style={{ position: 'absolute', right: 13, top: 12 }}
           name="ellipsis-v"
           size={24}
           color="black"

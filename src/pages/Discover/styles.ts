@@ -14,6 +14,7 @@ export const Header = styled.View`
 
 export const Search = styled.View`
   flex: 1;
+  border-radius: 5px;
   align-items: center;
   padding: 10px 15px;
   margin-right: 15px;
@@ -22,5 +23,5 @@ export const Search = styled.View`
 `;
 export const Input = styled.TextInput`
   flex: 1;
-  font-size: 18px;
+  font-size: 16px;
 `;
