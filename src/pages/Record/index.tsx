@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Setting: React.FC = () => {
+const Record: React.FC = () => {
   return <Container />;
 };
 
-export default Setting;
+export default Record;

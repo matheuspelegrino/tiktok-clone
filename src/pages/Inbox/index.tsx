@@ -1,9 +1,24 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Feather, MaterialIcons } from '@expo/vector-icons';
 
-const Setting: React.FC = () => {
-  return <Container />;
+import { Container, Title, Header } from './styles';
+
+const Inbox: React.FC = () => {
+  return (
+    <Container>
+      <Header>
+        <Title>Todas as atividades</Title>
+        <MaterialIcons name="arrow-drop-down" size={24} color="black" />
+        <Feather
+          style={{ position: 'absolute', right: 10, top: 10 }}
+          name="send"
+          size={24}
+          color="black"
+        />
+      </Header>
+    </Container>
+  );
 };
 
-export default Setting;
+export default Inbox;

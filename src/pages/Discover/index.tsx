@@ -4,7 +4,7 @@ import { Ionicons, AntDesign } from '@expo/vector-icons';
 
 import { Container, Search, Header, Input } from './styles';
 
-const Setting: React.FC = () => {
+const Discover: React.FC = () => {
   const [search, setSearch] = useState('');
   return (
     <Container>
@@ -31,4 +31,4 @@ const Setting: React.FC = () => {
   );
 };
 
-export default Setting;
+export default Discover;

@@ -22,5 +22,5 @@ export const Search = styled.View`
 `;
 export const Input = styled.TextInput`
   flex: 1;
-  font-size: 20px;
+  font-size: 18px;
 `;
