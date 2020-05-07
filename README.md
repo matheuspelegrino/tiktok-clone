@@ -28,9 +28,9 @@ Clone of the TikTok app layout. Under development.
 
 <p align="center">
  <br>
-  <img alt="discover" title="discover" src=".github/preview-04.png" width="150px"   />
-  <img alt="inbox" title="inbox" src=".github/preview-02.png" width="150px"   />
- <img alt="me" title="me" src=".github/preview-03.png"  width="150px"  />
+   <img alt="discover" title="discover" src=".github/preview-04.png" />
+  <img alt="inbox" title="inbox" src=".github/preview-02.png"/>
+ <img alt="me" title="me" src=".github/preview-03.png" />
 </p>
 
 ## Technologies
