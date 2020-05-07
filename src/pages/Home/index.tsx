@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Video } from 'expo-av';
 import { LinearGradient } from 'expo-linear-gradient';
 
-import { Container, Header, Text, Tab } from './styles';
+import { Container, Header, Text, Tab, Separator } from './styles';
 
 const Home: React.FC = () => {
   const [tab, setTab] = useState(1);
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
         <Tab onPress={() => setTab(1)}>
           <Text active={tab === 1}>Seguindo</Text>
         </Tab>
-
+        <Separator>|</Separator>
         <Tab onPress={() => setTab(2)}>
           <Text active={tab === 2}>Para você</Text>
         </Tab>

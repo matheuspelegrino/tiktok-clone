@@ -9,11 +9,17 @@ export const Container = styled.View`
   background: #fff;
 `;
 
+export const Separator = styled.Text`
+  color: #fff;
+  font-size: 15px;
+  opacity: 0.2;
+`;
+
 export const Header = styled.View`
-  flex: 1;
+  height: 10%;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin-top: 5%;
 `;
 export const Text = styled.Text`
