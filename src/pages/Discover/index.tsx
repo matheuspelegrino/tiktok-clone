@@ -19,7 +19,7 @@ const Discover: React.FC = () => {
             color="#838383"
           />
           <Input
-            placeholder="Procurar"
+            placeholder="Search"
             value={search}
             returnKeyType="search"
             onChangeText={text => setSearch(text)}

@@ -1,11 +1,11 @@
 <h1 align="center">
 <img alt="tiktokclone" title="tiktokclone" src=".github/tiktok.png" width="150px" />
-    <br><br>
+    <br>
     TikTok Clone
 </h1>
 
 <h4 align="center">
-Clone of the TikTok layout. Under development.
+Clone of the TikTok app layout. Under development.
 </h4>
 
 <p align="center">

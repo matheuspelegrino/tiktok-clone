@@ -8,7 +8,7 @@ const Inbox: React.FC = () => {
   return (
     <Container>
       <Header>
-        <Title>Todas as atividades</Title>
+        <Title>All activity</Title>
         <MaterialIcons name="arrow-drop-down" size={24} color="black" />
         <Feather
           style={{ position: 'absolute', right: 10, top: 10 }}

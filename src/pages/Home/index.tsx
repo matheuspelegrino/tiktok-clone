@@ -22,11 +22,11 @@ const Home: React.FC = () => {
       />
       <Header>
         <Tab onPress={() => setTab(1)}>
-          <Text active={tab === 1}>Seguindo</Text>
+          <Text active={tab === 1}>Following</Text>
         </Tab>
         <Separator>|</Separator>
         <Tab onPress={() => setTab(2)}>
-          <Text active={tab === 2}>Para você</Text>
+          <Text active={tab === 2}>For You</Text>
         </Tab>
       </Header>
       <Feed uri="http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4" />

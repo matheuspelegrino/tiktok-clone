@@ -1,7 +1,11 @@
 import React from 'react';
+import { Image, Animated, Easing } from 'react-native';
 
 import { FontAwesome, AntDesign } from '@expo/vector-icons';
 import { Video } from 'expo-av';
+import Lottie from 'lottie-react-native';
+
+import musicFly from '../../../assets/lottie-animations/music-fly.json';
 
 import {
   Container,
@@ -19,6 +23,22 @@ interface Props {
   uri: string;
 }
 const Feed: React.FC<Props> = ({ uri }) => {
+  const spinValue = new Animated.Value(0);
+
+  Animated.loop(
+    Animated.timing(spinValue, {
+      toValue: 1,
+      duration: 10000,
+      easing: Easing.linear,
+      useNativeDriver: true,
+    }),
+  ).start();
+
+  const rotateProp = spinValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: ['0deg', '360deg'],
+  });
+
   return (
     <>
       <Container>
@@ -73,6 +93,37 @@ const Feed: React.FC<Props> = ({ uri }) => {
             color="#06d755"
           />
           <TextAction>Share</TextAction>
+        </BoxAction>
+        <BoxAction>
+          <Animated.View
+            style={{
+              borderRadius: 50,
+              borderWidth: 12,
+              borderColor: '#292929',
+              transform: [
+                {
+                  rotate: rotateProp,
+                },
+              ],
+            }}
+          >
+            <Image
+              style={{
+                width: 35,
+                height: 35,
+                borderRadius: 25,
+              }}
+              source={{
+                uri: 'https://avatars3.githubusercontent.com/u/45601574',
+              }}
+            />
+          </Animated.View>
+
+          <Lottie
+            source={musicFly}
+            progress={spinValue}
+            style={{ width: 150, position: 'absolute', bottom: 0, right: 0 }}
+          />
         </BoxAction>
       </Actions>
     </>

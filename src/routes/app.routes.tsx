@@ -53,7 +53,7 @@ const AppRoutes: React.FC = () => {
           blur: () => setHome(false),
         }}
         options={{
-          tabBarLabel: 'Início',
+          tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => (
             <FontAwesome name="home" size={24} color={color} />
           ),
@@ -63,7 +63,7 @@ const AppRoutes: React.FC = () => {
         name="Discover"
         component={Discover}
         options={{
-          tabBarLabel: 'Descobrir',
+          tabBarLabel: 'Discover',
           tabBarIcon: ({ color }) => (
             <AntDesign name="search1" size={24} color={color} />
           ),
@@ -90,7 +90,7 @@ const AppRoutes: React.FC = () => {
         name="Inbox"
         component={Inbox}
         options={{
-          tabBarLabel: 'Caixa de entrada',
+          tabBarLabel: 'Inbox',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="message-text-outline"
@@ -104,7 +104,7 @@ const AppRoutes: React.FC = () => {
         name="Me"
         component={Me}
         options={{
-          tabBarLabel: 'Eu',
+          tabBarLabel: 'Me',
           tabBarIcon: ({ color }) => (
             <AntDesign name="user" size={24} color={color} />
           ),
