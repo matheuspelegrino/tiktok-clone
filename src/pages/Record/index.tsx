@@ -1,10 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, TouchableOpacity, StatusBar } from 'react-native';
+import { Text, View, StatusBar } from 'react-native';
 
+import {
+  FontAwesome,
+  MaterialCommunityIcons,
+  AntDesign,
+} from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { Camera } from 'expo-camera';
 
-import { Container } from './styles';
+import {
+  Container,
+  RecordButton,
+  Header,
+  Row,
+  Button,
+  Description,
+} from './styles';
 
 const Record: React.FC = () => {
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
@@ -28,19 +40,24 @@ const Record: React.FC = () => {
   }
 
   return (
-    <Container>
-      <Camera style={{ flex: 1 }} type={type}>
-        <View
-          style={{
-            flex: 1,
-            backgroundColor: 'transparent',
-          }}
-        >
-          <TouchableOpacity
-            style={{
-              position: 'absolute',
-              bottom: 0,
+    <Camera style={{ flex: 1 }} type={type}>
+      <Container>
+        <Header>
+          <Button
+            onPress={() => {
+              StatusBar.setHidden(false);
+              navigation.goBack();
             }}
+          >
+            <AntDesign name="close" size={28} color="#fff" />
+          </Button>
+          <Button>
+            <Row>
+              <FontAwesome name="music" size={18} color="#fff" />
+              <Description>Sons</Description>
+            </Row>
+          </Button>
+          <Button
             onPress={() => {
               setType(
                 type === Camera.Constants.Type.back
@@ -49,41 +66,16 @@ const Record: React.FC = () => {
               );
             }}
           >
-            <Text
-              style={{
-                fontSize: 18,
-                fontWeight: 'bold',
-                padding: 10,
-                color: 'white',
-              }}
-            >
-              Virar câmera
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              position: 'absolute',
-              top: 0,
-            }}
-            onPress={() => {
-              StatusBar.setHidden(false);
-              navigation.goBack();
-            }}
-          >
-            <Text
-              style={{
-                fontSize: 18,
-                fontWeight: 'bold',
-                padding: 10,
-                color: 'white',
-              }}
-            >
-              Voltar
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </Camera>
-    </Container>
+            <MaterialCommunityIcons
+              name="rotate-right"
+              size={28}
+              color="#fff"
+            />
+          </Button>
+        </Header>
+        <RecordButton />
+      </Container>
+    </Camera>
   );
 };
 
