@@ -3,6 +3,7 @@ import { Image, Animated, Easing } from 'react-native';
 
 import { FontAwesome, AntDesign } from '@expo/vector-icons';
 import { Video } from 'expo-av';
+import { LinearGradient } from 'expo-linear-gradient';
 import Lottie from 'lottie-react-native';
 
 import musicFly from '../../../assets/lottie-animations/music-fly.json';
@@ -19,10 +20,22 @@ import {
   TextAction,
 } from './styles';
 
-interface Props {
+interface Item {
+  id: number;
+  username: string;
+  tags: string;
+  music: string;
+  likes: number;
+  comments: number;
   uri: string;
 }
-const Feed: React.FC<Props> = ({ uri }) => {
+
+interface Props {
+  play: boolean;
+  item: Item;
+}
+
+const Feed: React.FC<Props> = ({ play, item }) => {
   const spinValue = new Animated.Value(0);
 
   Animated.loop(
@@ -41,14 +54,24 @@ const Feed: React.FC<Props> = ({ uri }) => {
 
   return (
     <>
+      <LinearGradient
+        colors={['rgba(0,0,0,.3)', 'transparent']}
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 0,
+          height: '70%',
+        }}
+      />
       <Container>
         <Video
-          source={{ uri }}
+          source={{ uri: item.uri }}
           rate={1.0}
           volume={1.0}
           isMuted={false}
           resizeMode="cover"
-          shouldPlay
+          shouldPlay={play}
           isLooping
           style={{
             width: '100%',
@@ -57,13 +80,11 @@ const Feed: React.FC<Props> = ({ uri }) => {
         />
       </Container>
       <Details>
-        <User>@matheuscastroweb</User>
-        <Tags>
-          #reactnative #tiktok #git #development #github #clone #react
-        </Tags>
+        <User>{item.username}</User>
+        <Tags>{item.tags}</Tags>
         <MusicBox>
           <FontAwesome name="music" size={15} color="#f5f5f5" />
-          <Music>The Chainsmokers - Closer (Lyric) ft. Halsey</Music>
+          <Music>{item.music}</Music>
         </MusicBox>
       </Details>
       <Actions>
@@ -74,7 +95,7 @@ const Feed: React.FC<Props> = ({ uri }) => {
             size={35}
             color="#fff"
           />
-          <TextAction>158,6K</TextAction>
+          <TextAction>{item.likes}</TextAction>
         </BoxAction>
         <BoxAction>
           <FontAwesome
@@ -83,7 +104,7 @@ const Feed: React.FC<Props> = ({ uri }) => {
             size={35}
             color="#fff"
           />
-          <TextAction>6141</TextAction>
+          <TextAction>{item.comments}</TextAction>
         </BoxAction>
         <BoxAction>
           <FontAwesome
@@ -102,7 +123,7 @@ const Feed: React.FC<Props> = ({ uri }) => {
               borderColor: '#292929',
               transform: [
                 {
-                  rotate: rotateProp,
+                  rotate: play ? rotateProp : 0,
                 },
               ],
             }}
@@ -121,11 +142,21 @@ const Feed: React.FC<Props> = ({ uri }) => {
 
           <Lottie
             source={musicFly}
-            progress={spinValue}
+            progress={play ? spinValue : 0}
             style={{ width: 150, position: 'absolute', bottom: 0, right: 0 }}
           />
         </BoxAction>
       </Actions>
+      <LinearGradient
+        colors={['transparent', 'rgba(0,0,0,.4)']}
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          bottom: 0,
+          height: '50%',
+        }}
+      />
     </>
   );
 };

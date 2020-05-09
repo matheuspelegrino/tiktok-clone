@@ -47,6 +47,7 @@ This project was developed with the following technologies:
 - [styled-components](https://www.styled-components.com/)
 - [expo-av](https://docs.expo.io/versions/latest/sdk/av/)
 - [expo-camera](https://docs.expo.io/versions/latest/sdk/camera/)
+- [@react-native-community/viewpager](https://github.com/react-native-community/react-native-viewpager)
 - [@expo/vector-icons](https://expo.github.io/vector-icons/)
 - [expo-linear-gradient](https://docs.expo.io/versions/latest/sdk/linear-gradient/)
 - [react-native-status-bar-height](https://github.com/ovr/react-native-status-bar-height)

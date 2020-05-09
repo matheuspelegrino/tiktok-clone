@@ -6,7 +6,7 @@ interface Props {
 
 export const Container = styled.View`
   flex: 1;
-  background: #fff;
+  background: #000;
 `;
 
 export const Separator = styled.Text`
@@ -18,7 +18,9 @@ export const Separator = styled.Text`
 export const Header = styled.View`
   height: 10%;
   flex-direction: row;
-  justify-content: center;
+  position: absolute;
+  align-self: center;
+  z-index: 10;
   align-items: center;
   margin-top: 5%;
 `;
