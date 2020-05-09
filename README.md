@@ -23,7 +23,7 @@ Clone of the TikTok app layout. Under development.
 </p>
 <br>
 <p align="center">
- <img alt="tiktokclonepreview" title="tiktokclonepreview" src="https://res.cloudinary.com/matheuscastroweb/image/upload/v1588992052/tiktok-clone/preview-01_dfngmr.png" /><br>
+ <img alt="tiktokclonepreview" title="tiktokclonepreview" src="https://res.cloudinary.com/matheuscastroweb/image/upload/v1588994570/tiktok-clone/preview-01_sgeuca.gif" /><br>
 </p>
 <br>
 <p align="center">
