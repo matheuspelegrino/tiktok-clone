@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="tiktokclone" title="tiktokclone" src=".github/tiktok.png" width="100px" />
+<img alt="tiktokclone" title="tiktokclone" src="https://res.cloudinary.com/matheuscastroweb/image/upload/v1588992052/tiktok-clone/tiktok_x9nihm.png" width="100px" />
     <br>
     TikTok Clone
 </h1>
@@ -23,7 +23,7 @@ Clone of the TikTok app layout. Under development.
 </p>
 <br>
 <p align="center">
- <img alt="tiktokclonepreview" title="tiktokclonepreview" src=".github/preview-01.png" /><br>
+ <img alt="tiktokclonepreview" title="tiktokclonepreview" src="https://res.cloudinary.com/matheuscastroweb/image/upload/v1588992052/tiktok-clone/preview-01_dfngmr.png" /><br>
 </p>
 <br>
 <p align="center">
@@ -32,9 +32,9 @@ Clone of the TikTok app layout. Under development.
 
 <p align="center">
  <br>
-   <img alt="discover" title="discover" src=".github/preview-04.png" />
-  <img alt="inbox" title="inbox" src=".github/preview-02.png"/>
- <img alt="me" title="me" src=".github/preview-03.png" />
+   <img alt="discover" title="discover" src="https://res.cloudinary.com/matheuscastroweb/image/upload/v1588992052/tiktok-clone/preview-04_nqykq9.png" />
+  <img alt="inbox" title="inbox" src="https://res.cloudinary.com/matheuscastroweb/image/upload/v1588992052/tiktok-clone/preview-02_hlvirt.png"/>
+ <img alt="me" title="me" src="https://res.cloudinary.com/matheuscastroweb/image/upload/v1588992052/tiktok-clone/preview-03_hkp6vf.png" />
 </p>
 
 ## Technologies
