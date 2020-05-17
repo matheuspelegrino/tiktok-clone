@@ -5,7 +5,7 @@
 </h1>
 
 <h4 align="center">
-Clone of the TikTok app layout. Under development.
+Clone of the TikTok app layout.
 </h4>
 
 <p align="center">
