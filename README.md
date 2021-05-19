@@ -5,7 +5,11 @@
 </h1>
 
 <h4 align="center">
-Clone of the TikTok app layout.
+Contact me at matheuscastroweb@gmail.com to about more.
+</h4>
+
+<h4 align="center">
+Clone of the TikTok app layout. 
 </h4>
 
 <p align="center">
