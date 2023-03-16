@@ -117,17 +117,17 @@ const Feed: React.FC<Props> = ({ play, item }) => {
         </BoxAction>
         <BoxAction>
           <Animated.View
-            style={{
+           style={{
               borderRadius: 50,
               borderWidth: 12,
               borderColor: '#292929',
               transform: [
                 {
-                  rotate: play ? rotateProp : 0,
+                  rotateX: play ? rotateProp : '0deg', 
                 },
               ],
             }}
-          >
+          > 
             <Image
               style={{
                 width: 35,
