@@ -25,7 +25,7 @@ const Discover: React.FC = () => {
             onChangeText={text => setSearch(text)}
           />
         </Search>
-        <Ionicons name="md-qr-scanner" size={25} color="black" />
+        <Ionicons name="scan" size={24} color="black" /> 
       </Header>
     </Container>
   );

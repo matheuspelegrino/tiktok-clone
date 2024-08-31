@@ -25,7 +25,7 @@ const Record: React.FC = () => {
   const navigation = useNavigation();
   useEffect(() => {
     async function permission(): Promise<void> {
-      const { status } = await Camera.requestPermissionsAsync();
+      const { status } = await Camera.requestCameraPermissionsAsync();
       setHasPermission(status === 'granted');
       StatusBar.setHidden(true);
     }
